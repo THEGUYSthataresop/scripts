@@ -197,8 +197,9 @@ function Flux:Window(text, bottom,mainclr,toclose)
 	UserInputService.InputBegan:Connect(
 		function(io, p)
 			if io.KeyCode == CloseBind then
-       uitoggled = not uitoggled
-       FluxLib.Enabled = not FluxLib.Enabled
+       				uitoggled = not uitoggled
+       				FluxLib.Enabled = not FluxLib.Enabled
+				require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).freemouse = uitoggled
 			end
 		end
 	)

@@ -199,7 +199,7 @@ function Flux:Window(text, bottom,mainclr,toclose)
 			if io.KeyCode == CloseBind then
        				uitoggled = not uitoggled
        				FluxLib.Enabled = not FluxLib.Enabled
-				require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).freemouse = uitoggled
+				require(game.Players.LocalPlayer.PlayerGui.MainUI.Initiator.Main_Game).freemouse = not uitoggled
 			end
 		end
 	)
